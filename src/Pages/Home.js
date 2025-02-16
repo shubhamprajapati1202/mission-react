@@ -1,6 +1,6 @@
-import Hero from "../Components/Hero";
+import React from "react"
+import Hero from "../Components/Hero"
 import { AboutSection, FeatureSection, Testimonial, CallToAction } from '../Components/CommonComponents'
-
 
 const Home = () => {
     return (

@@ -52,7 +52,7 @@ const RandomString = () => {
     },[stringLength, isNumberAllowed, isCharacterAllowed, generateNewString])
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="mx-auto p-4">
             <div className="flex items-center justify-center">
                 <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg">
                     <h4 className="text-blue-600 text-2xl font-bold text-center mb-6">Generate Shuffle String/Password</h4>

@@ -115,7 +115,7 @@ const TicTacToe = () => {
 
     return (
         <>
-            <div className="container mx-auto p-4">
+            <div className="py-10">
                 <div className="flex items-center justify-center">
                     <div className="flex bg-white shadow-lg rounded-lg p-8 w-full max-w-lg">
                         <div className="mr-5">
