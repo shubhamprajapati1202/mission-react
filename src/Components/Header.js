@@ -14,6 +14,7 @@ const menuArray = [
     { title: 'Currency Conversion', path: '/currency-convert' },
     { title: 'Password Generator', path: '/password-generator' },
     { title: 'Portfolio', path: '/portfolio' },
+    { title: 'AI Agent', path: '/ai-agent' },
     // {title: '', path: ''},
     // {title: '', path: ''},
 ]
