@@ -21,6 +21,7 @@ const menuList = [
     { route: '/currency-converter', title: 'Currency Converter' },
     { route: '/use-callback', title: 'ToDO' },
     { route: '/react-counter', title: 'React Counter' },
+    { route: '/context-api', title: 'Context API' },
     { route: '/login', title: 'Login' },
 ]
 
