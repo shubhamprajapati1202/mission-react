@@ -13,7 +13,7 @@ const menuArray = [
     { title: 'Services', path: '/services' },
     { title: 'Currency Conversion', path: '/currency-convert' },
     { title: 'Password Generator', path: '/password-generator' },
-    { title: 'Portfolio', path: '/portfolio' },
+    { title: 'Portfolio', path: 'https://shubhamprajapati1202.vercel.app/' },
     { title: 'AI Agent', path: '/ai-agent' },
     // {title: '', path: ''},
     // {title: '', path: ''},
