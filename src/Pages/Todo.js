@@ -42,7 +42,7 @@ const Todo = () => {
 
     useEffect(() => {
         const getSavedTodoList = JSON.parse(localStorage.getItem('todoList'))
-        if(getSavedTodoList.length > 0){
+        if(getSavedTodoList && getSavedTodoList?.length > 0){
             setTodoList(getSavedTodoList)
         }
 
