@@ -10,7 +10,7 @@ const menuArray = [
     { title: 'Contact Us', path: '/contact-us' },
     { title: 'BG Changer', path: '/background-changer' },
     { title: 'Game', path: '/tic-tak-toe' },
-    { title: 'Services', path: '/services' },
+    { title: 'Todo', path: '/todo' },
     { title: 'Currency Conversion', path: '/currency-convert' },
     { title: 'Password Generator', path: '/password-generator' },
     { title: 'Portfolio', path: 'https://shubhamprajapati1202.vercel.app/' },

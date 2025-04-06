@@ -11,6 +11,7 @@ import BGChanger from "./Pages/BGChanger";
 import RandomString from "./Pages/RandomString";
 import TicTakToe from "./Pages/TicTakToe";
 import AIAgent from "./Pages/AIAgent";
+import Todo from "./Pages/Todo"
 
 const Layout = () => {
     return (
@@ -27,6 +28,7 @@ const Layout = () => {
                         <Route path="/password-generator" element={<RandomString />} />
                         <Route path="/tic-tak-toe" element={<TicTakToe />} />
                         <Route path="/ai-agent" element={<AIAgent />} />
+                        <Route path="/todo" element={<Todo />} />
                         <Route path="*" element={<PageNotFound />} />
                     </Routes>
                 </main>
