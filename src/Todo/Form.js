@@ -37,7 +37,7 @@ const Form = () => {
     return (
         <form className="flex justify-center items-center" onSubmit={addTodoData}>
             <div className="w-full max-w-md mt-10">
-                <p className="text-sm text-white mb-2">Create your todo list.</p>
+                <p className="text-sm text-white mb-2">Create your task list.</p>
 
                 <div className="relative">
                     <input
