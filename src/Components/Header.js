@@ -34,7 +34,7 @@ const Header = () => {
 
     return (
         <>
-            <NavContactInfoSection dataList={contactDataList} />
+            {/* <NavContactInfoSection dataList={contactDataList} /> */}
             <nav className="sticky top-0 bg-gradient-to-r from-blue-600 to-blue-800 shadow-md z-10">
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                     <h1 className="text-xl font-bold uppercase text-white">
