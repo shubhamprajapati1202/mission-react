@@ -89,149 +89,97 @@ const Testimonial = () => {
 const FeatureSection = () => {
     const projects = [
         {
-            title: "Tic-Tac-Toe Arena",
-            tagline: "State Machine & Audio Reactivity",
-            desc: "Turn-based match engine featuring an automated toss simulator, sound synthesizers, draw detection, and celebratory confetti effects.",
+            title: "Tic Tac Toe",
+            desc: "Classic 2-player game with toss, sound effects, and confetti when a player wins.",
             link: "/tic-tak-toe",
-            category: "Game Engine",
-            stack: ["State Machine", "Web Audio", "Confetti FX"],
-            icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
-                </svg>
-            )
+            tags: ["Game Logic", "Sounds"],
+            actionText: "Play Game"
         },
         {
-            title: "Context Todo Manager",
-            tagline: "Scalable Global State Flow",
-            desc: "Full CRUD productivity application decoupled with React Context and custom reducers, maintaining clear separation between actions and rendering.",
+            title: "Todo List",
+            desc: "Task manager with add, edit, complete, and delete actions built using React Context.",
             link: "/todo",
-            category: "Context API",
-            stack: ["React Context", "CRUD State", "Optimistic Flow"],
-            icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                </svg>
-            )
+            tags: ["Context API", "CRUD"],
+            actionText: "Open App"
         },
         {
-            title: "Live Currency Exchange",
-            tagline: "Reactive Data Ingestion Hook",
-            desc: "Real-time currency converter utilizing an isolated custom hook (useCurrenciesRates) to fetch, parse, and synchronize global exchange rates.",
+            title: "Currency Converter",
+            desc: "Converts values between currencies by fetching live exchange rates with a custom hook.",
             link: "/currency-convert",
-            category: "Custom Hooks",
-            stack: ["Custom Hook", "Asynchronous Fetch", "Live Rates"],
-            icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            )
+            tags: ["Custom Hook", "API Fetch"],
+            actionText: "Convert Rates"
         },
         {
-            title: "Dynamic Canvas Palette",
-            tagline: "Direct DOM Reactivity Patterns",
-            desc: "Visual theme manipulator demonstrating state-driven style injection, quick color transitions, and responsive layout adaptations.",
+            title: "Background Changer",
+            desc: "Click different color buttons to instantly update the page background using useState.",
             link: "/background-changer",
-            category: "State & DOM",
-            stack: ["useState", "CSS Variables", "Event Flow"],
-            icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21a4 4 0 01-4-4 4 4 0 014-4h2v6a2 2 0 01-2 2zm0 0h12a2 2 0 002-2v-6h-2a4 4 0 00-4 4 4 4 0 004 4zM9 13V5a2 2 0 012-2h2a2 2 0 012 2v8" />
-                </svg>
-            )
+            tags: ["useState", "DOM"],
+            actionText: "Change Color"
         },
         {
-            title: "Password Entropy Engine",
-            tagline: "Algorithmic Generation & Clipboard",
-            desc: "Customizable security tool generating high-entropy credentials based on variable length parameters, character classes, and clipboard synchronization.",
+            title: "Password Generator",
+            desc: "Create random secure passwords with custom length options and copy to clipboard.",
             link: "/password-generator",
-            category: "Algorithms",
-            stack: ["Cryptographic Logic", "Clipboard API", "Hooks"],
-            icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                </svg>
-            )
+            tags: ["JavaScript", "State"],
+            actionText: "Generate"
         },
         {
-            title: "AI Interaction Interface",
-            tagline: "Modular Conversation Prototype",
-            desc: "Modern AI assistant interface testing structured prompt layouts, message stream representation, and responsive conversational components.",
+            title: "AI Agent (Demo)",
+            desc: "A clean chatbot conversation interface layout built with responsive components.",
             link: "/ai-agent",
-            category: "AI Interfaces",
-            stack: ["Chat Architecture", "UI Componentry", "Async Streams"],
-            icon: (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-            )
+            tags: ["UI Layout", "Components"],
+            actionText: "View Demo"
         }
     ]
 
     return (
-        <section id="interactive-labs" className="py-16 sm:py-24 bg-slate-50 border-t border-slate-200/80">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
-                <div className="text-center max-w-3xl mx-auto mb-14">
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100/80 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-3">
-                        Hands-on Engineering
-                    </div>
-                    <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-                        Interactive Demonstrations
+        <section id="mini-projects" className="py-12 sm:py-16 bg-gray-50 border-t border-gray-200">
+            <div className="container mx-auto px-4 sm:px-6">
+                <div className="text-center mb-10 sm:mb-12">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                        Mini Projects
                     </h2>
-                    <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-                        Practical implementations demonstrating core architectural principles in React 18 &mdash; tested, decoupled, and running entirely client-side.
+                    <p className="text-gray-600 max-w-xl mx-auto text-sm sm:text-base">
+                        Small applications and practical use cases created to practice different React features.
                     </p>
                 </div>
 
-                {/* Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
-                    {projects.map((project, index) => (
-                        <Link
-                            to={project.link}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {projects.map((item, index) => (
+                        <div
                             key={index}
-                            className="group flex flex-col justify-between bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/60 transition-all duration-300 hover:-translate-y-1"
+                            className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md hover:border-blue-500 transition duration-200 flex flex-col justify-between"
                         >
                             <div>
-                                {/* Top Meta Row */}
-                                <div className="flex items-center justify-between mb-5">
-                                    <div className="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 border border-blue-100/80 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                                        {project.icon}
-                                    </div>
-                                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-600 group-hover:bg-blue-50 group-hover:text-blue-700 transition-colors">
-                                        {project.category}
-                                    </span>
+                                <div className="flex items-center justify-between mb-3">
+                                    <h3 className="text-xl font-bold text-gray-900">
+                                        {item.title}
+                                    </h3>
                                 </div>
-
-                                {/* Title & Tagline */}
-                                <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-1.5">
-                                    {project.title}
-                                </h3>
-                                <p className="text-xs font-medium text-slate-400 mb-3 uppercase tracking-wider">
-                                    {project.tagline}
-                                </p>
-                                <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                                    {project.desc}
+                                <p className="text-gray-600 text-sm leading-relaxed mb-5">
+                                    {item.desc}
                                 </p>
                             </div>
 
-                            {/* Card Footer: Tech tags + action */}
-                            <div className="pt-4 border-t border-slate-100">
-                                <div className="flex flex-wrap gap-1.5 mb-4">
-                                    {project.stack.map((tech, i) => (
-                                        <span key={i} className="text-[11px] font-medium bg-slate-50 text-slate-600 px-2 py-0.5 rounded border border-slate-200/60">
-                                            {tech}
+                            <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
+                                <div className="flex flex-wrap gap-1.5">
+                                    {item.tags.map((tag, i) => (
+                                        <span
+                                            key={i}
+                                            className="bg-blue-50 text-blue-700 text-xs px-2.5 py-0.5 rounded font-medium"
+                                        >
+                                            {tag}
                                         </span>
                                     ))}
                                 </div>
-                                <div className="flex items-center justify-between text-blue-600 font-semibold text-sm">
-                                    <span>Launch Application</span>
-                                    <span className="transform group-hover:translate-x-1.5 transition-transform duration-200">
-                                        &rarr;
-                                    </span>
-                                </div>
+                                <Link
+                                    to={item.link}
+                                    className="text-blue-600 hover:text-blue-800 text-sm font-semibold inline-flex items-center gap-1 hover:underline ml-2"
+                                >
+                                    {item.actionText} &rarr;
+                                </Link>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
             </div>
