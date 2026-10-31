@@ -19,8 +19,8 @@ const menuArray = [
     // {title: '', path: ''},
 ]
 
-const menuList = menuArray.map((item, index) => (<NavLink key={`${index}_${item.title}`} to={item.path} className={({isActive, isPending}) => isPending ? 'text-yellow-300' : isActive ? 'text-yellow-300' : 'hover:text-yellow-300' }>{item.title}</NavLink>))
-const mobileMenu = menuArray.map((item, index) => (<li><NavLink key={`${index}_${item.title}`} to={item.path} className={({isActive, isPending}) => isPending ? 'text-yellow-300' : isActive ? 'text-yellow-300' : 'hover:text-yellow-300' }>{item.title}</NavLink></li>))
+const menuList = menuArray.map((item, index) => (<NavLink key={`${index}_${item.title}`} to={item.path} className={({isActive, isPending}) => isPending ? 'text-sky-300 font-medium' : isActive ? 'text-white font-semibold underline underline-offset-8 decoration-2 decoration-sky-400' : 'text-blue-100 hover:text-white transition-colors' }>{item.title}</NavLink>))
+const mobileMenu = menuArray.map((item, index) => (<li><NavLink key={`${index}_${item.title}`} to={item.path} className={({isActive, isPending}) => isPending ? 'text-sky-300 font-medium' : isActive ? 'text-white font-semibold underline underline-offset-8 decoration-2 decoration-sky-400' : 'text-blue-100 hover:text-white transition-colors' }>{item.title}</NavLink></li>))
 
 const Header = () => {
     // const contactData = Object.entries(JsonData.contactUs)
