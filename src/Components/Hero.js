@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 
 const Hero = () => {
     return (
@@ -31,14 +31,17 @@ const Hero = () => {
             {/* Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 sm:px-8">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6">
-                    Build Your Future with <span className="text-blue-500">Code</span>
+                    Learn React by <span className="text-yellow-400">Building</span>
                 </h1>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8">
-                    Join our community of developers and turn your ideas into reality.
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-2 sm:mb-3">
+                    Hands-on mini projects — Tic-Tac-Toe, Todo, Currency Converter &amp; more!
                 </p>
-                <button className="bg-blue-500 hover:bg-blue-700 px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 text-sm sm:text-base md:text-lg lg:text-xl rounded shadow-lg">
-                    Get Started
-                </button>
+                <p className="text-xs sm:text-sm text-blue-200 mb-5 sm:mb-7">
+                    Built by <strong>Shubham Prajapati</strong> while mastering React.js
+                </p>
+                <a href="/tic-tak-toe" className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base md:text-lg rounded shadow-lg transition duration-300">
+                    Explore Projects
+                </a>
             </div>
         </section>
 

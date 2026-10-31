@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+﻿import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
@@ -87,40 +87,82 @@ const Testimonial = () => {
 }
 
 const FeatureSection = () => {
+    const projects = [
+        {
+            emoji: "❌⭕",
+            title: "Tic-Tac-Toe Game",
+            desc: "Full game with Toss system, Sound effects, Confetti on win & Match draw detection.",
+            link: "/tic-tak-toe",
+            badge: "Game Logic"
+        },
+        {
+            emoji: "✅",
+            title: "Advanced Todo App",
+            desc: "CRUD Todo list built with Context API — Add, Edit, Complete & Delete tasks.",
+            link: "/todo",
+            badge: "Context API"
+        },
+        {
+            emoji: "💱",
+            title: "Currency Converter",
+            desc: "Live exchange rates using a Custom Hook & useEffect to fetch real-time API data.",
+            link: "/currency-convert",
+            badge: "Custom Hook"
+        },
+        {
+            emoji: "🎨",
+            title: "Background Changer",
+            desc: "Click a color to change the full page background — useState in action.",
+            link: "/background-changer",
+            badge: "useState"
+        },
+        {
+            emoji: "🔑",
+            title: "Password Generator",
+            desc: "Generate random strong passwords with custom length — string logic with hooks.",
+            link: "/password-generator",
+            badge: "useState"
+        },
+        {
+            emoji: "🤖",
+            title: "AI Agent",
+            desc: "Experimental AI Agent page integrated into the React app structure.",
+            link: "/ai-agent",
+            badge: "AI"
+        }
+    ]
+
     return (
         <section className="py-12 sm:py-16 bg-white text-center">
             <div className="container mx-auto px-4">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
-                    Our Features
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
+                    Mini Projects
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-                    {/* Feature 1 */}
-                    <div className="p-6 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <h3 className="text-xl sm:text-2xl font-semibold mb-4">
-                            Feature 1
-                        </h3>
-                        <p className="text-gray-700 text-sm sm:text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra urna at tortor fermentum.
-                        </p>
-                    </div>
-                    {/* Feature 2 */}
-                    <div className="p-6 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <h3 className="text-xl sm:text-2xl font-semibold mb-4">
-                            Feature 2
-                        </h3>
-                        <p className="text-gray-700 text-sm sm:text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra urna at tortor fermentum.
-                        </p>
-                    </div>
-                    {/* Feature 3 */}
-                    <div className="p-6 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <h3 className="text-xl sm:text-2xl font-semibold mb-4">
-                            Feature 3
-                        </h3>
-                        <p className="text-gray-700 text-sm sm:text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra urna at tortor fermentum.
-                        </p>
-                    </div>
+                <p className="text-gray-500 mb-8 text-sm sm:text-base">
+                    Each project covers a key React concept — click to try them live!
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    {projects.map((project, index) => (
+                        <a
+                            href={project.link}
+                            key={index}
+                            className="p-6 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-left group hover:border-blue-400"
+                        >
+                            <div className="flex items-center justify-between mb-3">
+                                <span className="text-3xl">{project.emoji}</span>
+                                <span className="text-xs bg-blue-100 text-blue-700 font-semibold px-2 py-1 rounded-full">
+                                    {project.badge}
+                                </span>
+                            </div>
+                            <h3 className="text-lg sm:text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
+                                {project.title}
+                            </h3>
+                            <p className="text-gray-600 text-sm sm:text-base">
+                                {project.desc}
+                            </p>
+                            <p className="mt-3 text-blue-500 text-sm font-medium">Try it →</p>
+                        </a>
+                    ))}
                 </div>
             </div>
         </section>
