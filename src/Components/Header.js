@@ -38,9 +38,8 @@ const Header = () => {
             <nav className="sticky top-0 bg-gradient-to-r from-blue-600 to-blue-800 shadow-md z-10">
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                     <h1 className="text-xl font-bold uppercase text-white">
-                    <NavLink to={'/'}>
-                        Shubham
-                        {/* <img src={Logo} alt="Logo" className="w-10 h-10" /> */}
+                    <NavLink to={'/'} className='tracking-wide'>
+                        Mission React
                     </NavLink>
                     </h1>
                     <div className="md:hidden">

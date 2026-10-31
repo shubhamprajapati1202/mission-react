@@ -3,7 +3,7 @@
 A collection of **practical mini-projects and use cases** built while learning React.js.
 Covers key concepts like components, state, props, hooks, routing, context API, custom hooks, and more.
 
-🌐 **Live Demo:** [mr-shubham.vercel.app](https://mr-shubham.vercel.app)
+🌐 **Live Demo:** [mission-react.vercel.app](https://mission-react.vercel.app)
 
 ---
 
@@ -112,7 +112,7 @@ npm run build
 This project is deployed on **Vercel** with **auto-deploy** enabled.
 Every push to the `master` branch automatically triggers a new deployment.
 
-🔗 Live: [https://mr-shubham.vercel.app](https://mr-shubham.vercel.app)
+🔗 Live: [https://mission-react.vercel.app](https://mission-react.vercel.app)
 
 ---
 
