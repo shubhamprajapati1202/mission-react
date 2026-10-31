@@ -77,10 +77,6 @@ const AboutUs = () => {
   );
 }
 
-const AboutUs_x = () =>{
-  return (
-    <h1>Hello user</h1>
-  )
-}
+
 
 export default AboutUs

@@ -1,6 +1,6 @@
 import { PageHeroSection, ContactInfoSection, MapSection } from '../Components/CommonComponents'
 import JsonData from '../Data/Data.json'
-import { SubmitButtonLoader } from '../Components/SubmitButtonLoader'
+// import { SubmitButtonLoader } from '../Components/SubmitButtonLoader'
 import { ToastContainer, toast } from 'react-toastify';
 import { useState } from 'react';
 

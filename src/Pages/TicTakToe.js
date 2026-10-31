@@ -5,7 +5,7 @@ import winningSound from '../sounds/winning.wav'
 import Xturn from '../sounds/x-turn.mp3'
 import Oturn from '../sounds/o-turn.mp3'
 import MatchDraw from '../sounds/match-draw.mp3'
-import GameMusic from '../sounds/game-music.mp3'
+// import GameMusic from '../sounds/game-music.mp3'
 
 const boxStyle = `bg-white text-center flex items-center justify-center border border-gray-400 text-3xl font-bold hover:bg-gray-100 cursor-pointer`
 const TossboxStyle = `text-center border border-gray-400 text-3xl font-bold px-4 py-2`
@@ -156,14 +156,14 @@ const TicTakToe = () => {
     const [isWinnerDecided, setDecidedWinner] = useState(false)
     const [isMatchDraw, setMatchDraw] = useState(false)
     const [winnerIs, setWinner] = useState(null)
-    const [isExploding, setIsExploding] = useState(false);
+    // const [isExploding, setIsExploding] = useState(false);
     const [playCheer] = useSound(winningSound, { volume: 0.5 });
-    const [playBackgroundMusic] = useSound(GameMusic, { volume: 0.2 });
-    const [isPlayBackGroundMusic, setPlayBackGroundMusic] = useState(true)
-    const [timer, setTimer] = useState(0)
+    // const [playBackgroundMusic] = useSound(GameMusic, { volume: 0.2 });
+    // const [isPlayBackGroundMusic, setPlayBackGroundMusic] = useState(true)
+    // const [timer, setTimer] = useState(0)
     const [isTossDone, setTossValue] = useState(false)
-    const [xPlayer, setXPlayer] = useState('X')
-    const [oPlayer, setOPlayer] = useState('O')
+    const xPlayer = 'X'
+    const oPlayer = 'O'
     const [nextPlayer, setNextPlayer] = useState(null)
 
     const winner = findWiner(blocks)
@@ -187,9 +187,7 @@ const TicTakToe = () => {
     }
 
     useEffect(() => {
-        if (nextPlayer === 'O') {
-            setPlayBackGroundMusic(false)
-        }
+        // if (nextPlayer === 'O') { setPlayBackGroundMusic(false); }
 
         // const timex = setTimeout(function(){
         //     const prx = timer+1
@@ -208,7 +206,7 @@ const TicTakToe = () => {
         //     }
         // }
 
-    }, [nextPlayer, timer])
+    }, [nextPlayer])
 
 
     return (

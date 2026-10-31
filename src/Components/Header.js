@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import { NavLink } from "react-router-dom"
 // import Logo from '../assets/logo513.png'
-import { NavContactInfoSection } from './CommonComponents'
-import JsonData from '../Data/Data.json'
+// import { NavContactInfoSection } from './CommonComponents'
+// import JsonData from '../Data/Data.json'
 
 const menuArray = [
     { title: 'Home', path: '/' },
@@ -23,8 +23,8 @@ const menuList = menuArray.map((item, index) => (<NavLink key={`${index}_${item.
 const mobileMenu = menuArray.map((item, index) => (<li><NavLink key={`${index}_${item.title}`} to={item.path} className={({isActive, isPending}) => isPending ? 'text-yellow-300' : isActive ? 'text-yellow-300' : 'hover:text-yellow-300' }>{item.title}</NavLink></li>))
 
 const Header = () => {
-    const contactData = Object.entries(JsonData.contactUs)
-    const contactDataList = contactData.filter(([key]) => ['phone', 'email'].includes(key))
+    // const contactData = Object.entries(JsonData.contactUs)
+    // const contactDataList = contactData.filter(([key]) => ['phone', 'email'].includes(key))
 
     const [isOpenMobileNav, setIsOpen] = useState(false)
 

@@ -1,4 +1,4 @@
-﻿import React from "react"
+import React from "react"
 
 const Hero = () => {
     return (
@@ -34,7 +34,7 @@ const Hero = () => {
                     Learn React by <span className="text-yellow-400">Building</span>
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-2 sm:mb-3">
-                    Hands-on mini projects — Tic-Tac-Toe, Todo, Currency Converter &amp; more!
+                    Hands-on mini projects &mdash; Tic-Tac-Toe, Todo, Currency Converter & more!
                 </p>
                 <p className="text-xs sm:text-sm text-blue-200 mb-5 sm:mb-7">
                     Built by <strong>Shubham Prajapati</strong> while mastering React.js
@@ -44,7 +44,6 @@ const Hero = () => {
                 </a>
             </div>
         </section>
-
     )
 }
 
