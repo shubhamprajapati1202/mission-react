@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# ⚛️ Mission React — React.js Practice Projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A collection of **practical mini-projects and use cases** built while learning React.js.
+Covers key concepts like components, state, props, hooks, routing, context API, custom hooks, and more.
 
-## Available Scripts
+🌐 **Live Demo:** [mr-shubham.vercel.app](https://mr-shubham.vercel.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Technology       | Usage                            |
+|------------------|----------------------------------|
+| React.js 18      | UI Library                       |
+| React Router v7  | Client-side routing              |
+| Tailwind CSS     | Utility-first styling            |
+| Context API      | Global state management (Todos)  |
+| Custom Hooks     | Reusable logic (Currency API)    |
+| react-toastify   | Toast notifications              |
+| react-confetti-explosion | Winner celebration effect |
+| use-sound        | Game sound effects               |
+| Font Awesome     | Icons                            |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📁 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── Components/
+│   ├── Header.js              # Navigation bar with route links
+│   ├── Footer.js              # Footer section
+│   ├── Hero.js                # Landing hero section
+│   ├── OtherHeroSection.js    # Secondary hero for inner pages
+│   ├── CommonComponents.js    # Reusable: AboutSection, FeatureSection, Testimonial, CallToAction
+│   └── SubmitButtonLoader.js  # Loading spinner for form submit
+├── Pages/
+│   ├── Home.js                # Home page (Hero + Sections)
+│   ├── AboutUs.js             # About page
+│   ├── ContactUs.js           # Contact page with form
+│   ├── BGChanger.js           # Background color changer (useState)
+│   ├── RandomString.js        # Password generator (useState + logic)
+│   ├── CurrencyConverter.js   # Live currency converter (Custom Hook + API)
+│   ├── TicTakToe.js           # Full Tic-Tac-Toe game with sounds & confetti
+│   ├── Todo.js                # Advanced Todo (Context API)
+│   ├── AIAgent.js             # AI Agent page
+│   └── PageNotFound.js        # 404 Not Found page
+├── Todo/
+│   ├── Form.js                # Todo input form
+│   └── List.js                # Todo list rendering
+├── context/
+│   └── TodoContext.js         # Context + Provider for global Todo state
+├── Hooks/
+│   └── useCurrenciesRates.js  # Custom hook — fetches live exchange rates
+├── Data/
+│   └── Data.json              # Static content data
+├── sounds/                    # Audio files for Tic-Tac-Toe game
+├── Layout.js                  # App layout with BrowserRouter + Routes
+└── App.js                     # Root component
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧩 Mini Projects Included
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Project | Route | Key Concepts |
+|---|---|---|
+| 🏠 Home Page | `/` | Component composition, reusable sections |
+| 🎨 Background Changer | `/background-changer` | `useState`, event handling |
+| 🔑 Password Generator | `/password-generator` | `useState`, string logic |
+| 💱 Currency Converter | `/currency-convert` | Custom Hooks, `useEffect`, API fetch |
+| ❌⭕ Tic-Tac-Toe | `/tic-tak-toe` | Game logic, sounds, confetti, toss system |
+| ✅ Advanced Todo | `/todo` | `Context API`, CRUD operations |
+| 🤖 AI Agent | `/ai-agent` | Component structure |
+| 📬 Contact Form | `/contact-us` | Controlled inputs, form handling |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clone the Repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/shubhamprajapati1202/mission-react.git
+cd mission-react
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Install Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+### 3. Start Development Server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+App runs at: `http://localhost:3000`
 
-### Code Splitting
+### 4. Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run build
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌐 Deployment
 
-### Making a Progressive Web App
+This project is deployed on **Vercel** with **auto-deploy** enabled.
+Every push to the `master` branch automatically triggers a new deployment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🔗 Live: [https://mr-shubham.vercel.app](https://mr-shubham.vercel.app)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 License
 
-### Deployment
+This project is licensed under the **MIT License**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Built with ❤️ while learning React by [Shubham Prajapati](https://github.com/shubhamprajapati1202)
